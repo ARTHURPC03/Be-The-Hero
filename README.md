@@ -7,12 +7,12 @@ Aplicação com intuito de conectar pessoas interessadas em ajudar ONGS. Desenvo
 ## :camera:
 
 ### Front-end
-![Be The Hero GIF](gihub/Bth.gif)
-![image](gihub/logon.png)
-![image](gihub/cadastro.png)
-![image](gihub/Profile.png)
-![image](gihub/novoCaso.png)
-![image](gihub/PofileComNovoCaso.png)
+![Be The Hero GIF](github/Bth.gif)
+![image](github/logon.png)
+![image](github/cadastro.png)
+![image](github/Profile.png)
+![image](github/novoCaso.png)
+![image](github/PofileComNovoCaso.png)
 
 ### Back-end:
 ![image](https://user-images.githubusercontent.com/55156476/77479851-5518d400-6dff-11ea-9541-69f391c2747a.png)
