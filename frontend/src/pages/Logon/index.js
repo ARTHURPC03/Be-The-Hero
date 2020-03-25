@@ -6,7 +6,7 @@ import api from '../../services/api'
 
 import { Container, SectionForm, Button, Form } from './styles'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo1.svg'
 import HeroesImg from '../../assets/heroes.png'
 
 export default function Logon() {

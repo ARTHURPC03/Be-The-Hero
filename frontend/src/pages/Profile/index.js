@@ -6,7 +6,7 @@ import api from '../../services/api'
 
 import { Container, Header, Ul } from './styles'
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo1.svg'
 
 export default function Profile() {
   const [incidents, setIncidents] = useState([])
@@ -60,34 +60,37 @@ export default function Profile() {
           <FiPower size={18} color="#E02041" />
         </button>
       </Header>
-
-      <h1>Casos cadastrados</h1>
+      {incidents.length > 0 ? <h1>Casos cadastrados</h1> : null}
 
       <Ul>
-        {incidents.map((incident) => (
-          <li key={incident.id}>
-            <strong>CASO:</strong>
-            <p>{incident.title}</p>
+        {incidents.length > 0 ? (
+          incidents.map((incident) => (
+            <li key={incident.id}>
+              <strong>CASO:</strong>
+              <p>{incident.title}</p>
 
-            <strong>DESCRIÇÃO:</strong>
-            <p>{incident.description}</p>
+              <strong>DESCRIÇÃO:</strong>
+              <p>{incident.description}</p>
 
-            <strong>VALOR:</strong>
-            <p>
-              {Intl.NumberFormat('pt-BR', {
-                style: 'currency',
-                currency: 'BRL',
-              }).format(incident.value)}
-            </p>
+              <strong>VALOR:</strong>
+              <p>
+                {Intl.NumberFormat('pt-BR', {
+                  style: 'currency',
+                  currency: 'BRL',
+                }).format(incident.value)}
+              </p>
 
-            <button
-              onClick={() => handleDeleteIncident(incident.id)}
-              type="button"
-            >
-              <FiTrash2 size={20} color="#a8a8b3" />
-            </button>
-          </li>
-        ))}
+              <button
+                onClick={() => handleDeleteIncident(incident.id)}
+                type="button"
+              >
+                <FiTrash2 size={20} />
+              </button>
+            </li>
+          ))
+        ) : (
+          <h1>Nenhum caso registrado</h1>
+        )}
       </Ul>
     </Container>
   )

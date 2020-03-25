@@ -19,15 +19,22 @@ export const Form = styled.form`
   margin-top: 100px;
 
   h1 {
+    color: white;
     font-size: 32px;
     margin-bottom: 32px;
+    border-width: 3px;
+  }
+
+  input:focus {
+    border-color: #e02041;
+    border-width: 3px;
   }
 
   a {
     display: flex;
     align-items: center;
     margin-top: 40px;
-    color: #41414d;
+    color: #ffffff;
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -56,9 +63,17 @@ export const Button = styled.button`
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  transition: filter 0.2s;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: border 0.2s ease 0s, transform 0.2s ease 0s;
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(11, 10, 13);
+  border-image: initial;
 
   &:hover {
-    filter: brightness(90%);
+    transform: translateY(-7px);
+    border-color: #fff;
   }
 `

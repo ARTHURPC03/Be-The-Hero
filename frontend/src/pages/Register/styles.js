@@ -5,7 +5,6 @@ export const Container = styled.div`
   max-width: 1120px;
   height: 100vh;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,9 +12,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   padding: 96px;
-  background: #f0f0f5;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  background: #202020;
 
   display: flex;
   justify-content: space-between;
@@ -29,11 +28,12 @@ export const Section = styled.section`
   h1 {
     margin: 64px 0 32px;
     font-size: 32px;
+    color: #ffff;
   }
 
   p {
     font-size: 18px;
-    color: #737380;
+    color: #999;
     line-height: 32px;
   }
 
@@ -41,7 +41,7 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     margin-top: 40px;
-    color: #41414d;
+    color: #fff;
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -62,6 +62,17 @@ export const Form = styled.form`
 
   input {
     margin-top: 8px;
+    background: #191919;
+    color: #fff;
+  }
+
+  input:focus {
+    border-color: #e02041;
+    border-width: 3px;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff;
   }
 `
 export const InputGroup = styled.div`
@@ -88,7 +99,17 @@ export const Button = styled.button`
   line-height: 60px;
   transition: filter 0.2s;
 
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: border 0.2s ease 0s, transform 0.2s ease 0s;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+
   &:hover {
-    filter: brightness(90%);
+    transform: translateY(-5px);
+    border-color: #fff;
   }
 `

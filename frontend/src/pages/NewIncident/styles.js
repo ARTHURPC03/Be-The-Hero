@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   padding: 96px;
-  background: #f0f0f5;
+  background: #191919;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
@@ -29,6 +29,7 @@ export const Section = styled.section`
   h1 {
     margin: 64px 0 32px;
     font-size: 32px;
+    color: #fff;
   }
 
   p {
@@ -41,7 +42,7 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     margin-top: 40px;
-    color: #41414d;
+    color: #ffff;
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -62,10 +63,30 @@ export const Form = styled.form`
 
   input {
     margin-top: 8px;
+    background: #191919;
+    color: #fff;
   }
 
+  input:focus {
+    border-color: #e02041;
+    border-width: 3px;
+  }
+
+  textarea:focus {
+    border-color: #e02041;
+    border-width: 3px;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff;
+  }
+  textarea::-webkit-input-placeholder {
+    color: #fff;
+  }
   textarea {
+    background: #191919;
     margin-top: 8px;
+    color: #fff;
   }
 `
 
@@ -85,7 +106,17 @@ export const Button = styled.button`
   line-height: 60px;
   transition: filter 0.2s;
 
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: border 0.2s ease 0s, transform 0.2s ease 0s;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+
   &:hover {
-    filter: brightness(90%);
+    transform: translateY(-5px);
+    border-color: #fff;
   }
 `

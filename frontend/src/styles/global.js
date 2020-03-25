@@ -10,7 +10,7 @@ export default createGlobalStyle`
   }
   body {
     font: 400 14px Roboto, sans-serif;
-    background: #f0f0f5;
+    background: #0D0D0D;
     -webkit-font-smoothing: antialiased;
   }
   input, button, textarea {
