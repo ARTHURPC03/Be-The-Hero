@@ -1,4 +1,4 @@
-# Be-The-Hero
+# Be The Hero Dark
 Aplicação com intuito de conectar pessoas interessadas em ajudar ONGS. Desenvolvida com Node.js, ReactJS e React Native.
 
 
