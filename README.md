@@ -1,3 +1,7 @@
+<h1 align="center">
+    <img alt="Semana OmniStack" src=".github/logo.svg" width="200px" />
+</h1>
+
 # Be The Hero Dark
 Aplicação com intuito de conectar pessoas interessadas em ajudar ONGS. Desenvolvida com Node.js, ReactJS e React Native.
 
@@ -8,12 +12,15 @@ Acrescentei a aplicação um TEMA DARK, animações nos botões e inputs e um av
 ## :camera: Veja:
 
 ### Front-end
-![Be The Hero GIF](github/Bth.gif)
-![image](github/logon.png)
-![image](github/cadastro.png)
-![image](github/Profile.png)
-![image](github/novoCaso.png)
-![image](github/ProfileComNovoCaso.png)
+![Be The Hero GIF](github/WebT.gif)
+![image](github/logonB.png)
+![image](github/logonW.png)
+![image](github/registerB.png)
+![image](github/registerW.png)
+![image](github/profileB.png)
+![image](github/profileW.png)
+![image](github/incidentB.png)
+![image](github/incidentW.png)
 
 ### Mobile
 ![MObile GIF](github/mobile.gif)
