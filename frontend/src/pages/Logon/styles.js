@@ -19,10 +19,15 @@ export const Form = styled.form`
   margin-top: 100px;
 
   h1 {
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     font-size: 32px;
     margin-bottom: 32px;
     border-width: 3px;
+  }
+
+  input {
+    transition: background 1s ease 0s, transform 1s ease 0s;
+    background: ${(props) => props.theme.colors.input};
   }
 
   input:focus {
@@ -34,7 +39,7 @@ export const Form = styled.form`
     display: flex;
     align-items: center;
     margin-top: 40px;
-    color: #ffffff;
+    color: ${(props) => props.theme.colors.text};
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -55,7 +60,7 @@ export const Button = styled.button`
   background: #e02041;
   border: 0;
   border-radius: 8px;
-  color: #fff;
+  color: #ffff;
   font-weight: 700;
   margin-top: 16px;
   display: inline-block;
@@ -69,11 +74,11 @@ export const Button = styled.button`
   transition: border 0.2s ease 0s, transform 0.2s ease 0s;
   border-width: 3px;
   border-style: solid;
-  border-color: rgb(11, 10, 13);
+  border-color: ${(props) => props.theme.colors.background};
   border-image: initial;
 
   &:hover {
     transform: translateY(-7px);
-    border-color: #fff;
+    border-color: ${(props) => props.theme.colors.text};
   }
 `

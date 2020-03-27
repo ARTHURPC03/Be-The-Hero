@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiPower, FiTrash2 } from 'react-icons/fi'
+import { ThemeContext } from 'styled-components'
 
 import api from '../../services/api'
 
@@ -47,11 +48,11 @@ export default function Profile() {
 
     history.push('/')
   }
-
+  const { logo } = useContext(ThemeContext)
   return (
     <Container>
       <Header>
-        <img src={logoImg} alt="Be The Hero" />
+        <img src={logo} alt="Be The Hero" />
 
         <span>Bem vindo, {ongName} </span>
 

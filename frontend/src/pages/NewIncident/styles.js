@@ -13,9 +13,10 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 100%;
   padding: 96px;
-  background: #191919;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  background: ${(props) => props.theme.colors.content};
+  transition: background 1s ease 0s, transform 1s ease 0s;
 
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,7 @@ export const Section = styled.section`
   h1 {
     margin: 64px 0 32px;
     font-size: 32px;
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
   }
 
   p {
@@ -42,7 +43,7 @@ export const Section = styled.section`
     display: flex;
     align-items: center;
     margin-top: 40px;
-    color: #ffff;
+    color: ${(props) => props.theme.colors.text};
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
@@ -63,8 +64,9 @@ export const Form = styled.form`
 
   input {
     margin-top: 8px;
-    background: #191919;
-    color: #fff;
+    background: ${(props) => props.theme.colors.input};
+    color: ${(props) => props.theme.colors.text};
+    transition: color, background 1s ease 0s, transform 1s ease 0s;
   }
 
   input:focus {
@@ -78,15 +80,16 @@ export const Form = styled.form`
   }
 
   input::-webkit-input-placeholder {
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
   }
   textarea::-webkit-input-placeholder {
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
   }
   textarea {
-    background: #191919;
+    transition: color, background 1s ease 0s, transform 1s ease 0s;
+    background: ${(props) => props.theme.colors.input};
     margin-top: 8px;
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
   }
 `
 
@@ -117,6 +120,6 @@ export const Button = styled.button`
 
   &:hover {
     transform: translateY(-5px);
-    border-color: #fff;
+    border-color: ${(props) => props.theme.colors.text};
   }
 `

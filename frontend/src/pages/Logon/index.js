@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiLogIn } from 'react-icons/fi'
+import { ThemeContext } from 'styled-components'
 
 import api from '../../services/api'
 
 import { Container, SectionForm, Button, Form } from './styles'
 
-import logoImg from '../../assets/logo1.svg'
 import HeroesImg from '../../assets/heroes.png'
 
 export default function Logon() {
@@ -28,10 +28,12 @@ export default function Logon() {
     }
   }
 
+  const { logo } = useContext(ThemeContext)
+
   return (
     <Container>
       <SectionForm>
-        <img src={logoImg} alt="Be The Hero" />
+        <img src={logo} alt="Be The Hero" />
 
         <Form onSubmit={handleLogin}>
           <h1>Faça seu logon</h1>

@@ -10,8 +10,10 @@ export default createGlobalStyle`
   }
   body {
     font: 400 14px Roboto, sans-serif;
-    background: #0D0D0D;
+    background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
+    transition: color, background 1s ease 0s, transform 1s ease 0s;
+    color: ${(props) => props.theme.colors.text}
   }
   input, button, textarea {
     font: 400 18px Roboto, sans-serif;
@@ -24,7 +26,7 @@ export default createGlobalStyle`
   form input {
     width: 100%;
     height: 60px;
-    color: #333;
+    color: ${(props) => props.theme.colors.text};
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 0 24px;
@@ -34,7 +36,7 @@ export default createGlobalStyle`
     width: 100%;
     min-height: 140px;
     resize: none;
-    color: #333;
+    color: ${(props) => props.theme.colors.text};
     border: 1px solid #dcdce6;
     border-radius: 8px;
     padding: 16px 24px;

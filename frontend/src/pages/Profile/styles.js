@@ -9,7 +9,8 @@ export const Container = styled.div`
   h1 {
     margin-top: 80px;
     margin-bottom: 24;
-    color: #ffffff;
+    transition: color 1s ease 0s, transform 1s ease 0s;
+    color: ${(props) => props.theme.colors.text};
   }
 `
 
@@ -20,7 +21,8 @@ export const Header = styled.header`
   span {
     font-size: 20px;
     margin-left: 24px;
-    color: #ffffff;
+    transition: color 1s ease 0s, transform 1s ease 0s;
+    color: ${(props) => props.theme.colors.text};
   }
 
   img {
@@ -48,12 +50,12 @@ export const Header = styled.header`
     transition: border 0.2s ease 0s, transform 0.2s ease 0s;
     border-width: 3px;
     border-style: solid;
-    border-color: rgb(11, 10, 13);
+    border-color: ${(props) => props.theme.colors.background};
     border-image: initial;
 
     &:hover {
       transform: translateY(-5px);
-      border-color: #fff;
+      border-color: ${(props) => props.theme.colors.text};
     }
 
     width: 260px;
@@ -77,12 +79,12 @@ export const Header = styled.header`
     transition: border 0.2s ease 0s, transform 0.2s ease 0s;
     border-width: 3px;
     border-style: solid;
-    border-color: rgb(11, 10, 13);
+    border-color: ${(props) => props.theme.colors.background};
     border-image: initial;
 
     &:hover {
       transform: translateY(-5px);
-      border-color: #fff;
+      border-color: ${(props) => props.theme.colors.text};
     }
   }
 `
@@ -93,7 +95,7 @@ export const Ul = styled.ul`
   list-style: none;
 
   li {
-    background: #202020;
+    background: ${(props) => props.theme.colors.input};
     padding: 24px;
     border-radius: 8px;
     position: relative;
@@ -104,7 +106,6 @@ export const Ul = styled.ul`
     border-style: solid;
     border-color: rgb(11, 10, 13);
     border-image: initial;
-
     &:hover {
       border-width: 2px;
       border-style: solid;
@@ -132,14 +133,14 @@ export const Ul = styled.ul`
 
       svg {
         transition: border 0.2s ease 0s, transform 0.2s ease 0s;
-        color: #a8a8b3;
+        color: ${(props) => props.theme.colors.text};
       }
 
       &:hover {
         transform: translateY(-7px);
-        border-color: #fff;
+        border-color: transparent;
         svg {
-          color: #fff;
+          color: ${(props) => props.theme.colors.text};
         }
       }
     }
@@ -147,7 +148,9 @@ export const Ul = styled.ul`
     strong {
       display: block;
       margin-bottom: 16px;
-      color: #fff;
+
+      transition: color 1s ease 0s, transform 1s ease 0s;
+      color: ${(props) => props.theme.colors.text};
     }
 
     p + strong {

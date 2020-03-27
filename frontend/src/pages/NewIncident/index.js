@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 
 import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
@@ -6,8 +7,6 @@ import { FiArrowLeft } from 'react-icons/fi'
 import api from '../../services/api'
 
 import { Container, Content, Section, Button, Form } from './styles'
-
-import logoImg from '../../assets/logo1.svg'
 
 export default function NewIncident() {
   const [title, setTitle] = useState('')
@@ -40,11 +39,13 @@ export default function NewIncident() {
     }
   }
 
+  const { logo } = useContext(ThemeContext)
+
   return (
     <Container>
       <Content>
         <Section>
-          <img src={logoImg} alt="Be The Hero" />
+          <img src={logo} alt="Be The Hero" />
 
           <h1>Cadastrar novo caso</h1>
           <p>
