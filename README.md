@@ -7,7 +7,12 @@ Aplicação com intuito de conectar pessoas interessadas em ajudar ONGS. Desenvo
 
 
 # Fui além do desafio!
-Acrescentei a aplicação um TEMA DARK, animações nos botões e inputs e um aviso caso a ONG não tenha nenhum caso.
+💻Adicionei um Theme Switcher
+💻Utilizei Styled-components para estilizar a aplicação
+💻Eslint e Prettier para padronizar o código 
+💻Animações nos nos botões e nos inputs
+💻Alterei a animação da navegação do mobile para deixá-la igual a de IOS
+💻Quando a ONG não tem nenhum caso registrado, aparece uma mensagem informando que não há casos registrados.
 
 ## :camera: Veja:
 
@@ -71,7 +76,13 @@ Acrescentei a aplicação um TEMA DARK, animações nos botões e inputs e um av
       <td>Prettier</td>
       <td>Prettier</td>
     </tr>
+    <tr>
+      <td>Jest</td>
+      <td>Jest</td>
+      <td>Jest</td>
+    </tr>
   </tbody>
+  
 </table>
 
 
