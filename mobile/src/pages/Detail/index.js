@@ -68,8 +68,8 @@ export default function Detail() {
           {incident.name} de {incident.city}/{incident.uf}
         </IncidentValue>
 
-        <IncidentProperty>CASO:</IncidentProperty>
-        <IncidentValue>{incident.title}</IncidentValue>
+        <IncidentProperty>DESCRIÇÃO:</IncidentProperty>
+        <IncidentValue>{incident.description}</IncidentValue>
 
         <IncidentProperty>VALOR:</IncidentProperty>
         <IncidentValue>
