@@ -69,7 +69,7 @@ export default function Detail() {
         </IncidentValue>
 
         <IncidentProperty>CASO:</IncidentProperty>
-        <IncidentValue>{incident.description}</IncidentValue>
+        <IncidentValue>{incident.title}</IncidentValue>
 
         <IncidentProperty>VALOR:</IncidentProperty>
         <IncidentValue>
